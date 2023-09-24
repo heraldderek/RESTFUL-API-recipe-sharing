@@ -1,4 +1,12 @@
 #NOTE: RUNNING THIS UNIT TEST WILL DELETE ALL TABLES, THUS YOU HAVE TO RUN THE createtable.py AGAIN CREATING NEW TABLES
+"""
+Unit Tests for Recipe Management API
+
+These unit tests cover various functionalities of the Recipe Management API, including creating, retrieving, updating, and deleting recipes,
+rating recipes, adding comments, and searching for recipes by name or ingredient.
+
+To run these tests, make sure the Flask application is running, and then execute this script.
+"""
 
 import unittest
 import json
