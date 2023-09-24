@@ -1,3 +1,58 @@
+"""
+Recipe Management API Client
+
+This script provides a set of functions to interact with a Flask-based Recipe Management API.
+You can use these functions to perform various actions such as adding, updating, and deleting recipes,
+rating recipes, adding comments, and searching for recipes by name or ingredient.
+
+Example Usage:
+1. Add a new recipe:
+   new_recipe_data = {
+       "name": "Hotdog Sandwich",
+       "ingredients": "Hotdog, bread",
+       "steps": "1. Cook hotdog. 2. Put hotdog on bread.",
+       "preparation_time": 5
+   }
+   add_recipe(new_recipe_data)
+
+2. Update a recipe:
+   updated_recipe_data = {
+       "name": "Updated Recipe Name",
+       "ingredients": "Updated Ingredients",
+       "steps": "Updated Steps",
+       "preparation_time": 30
+   }
+   update_recipe(11, updated_recipe_data)  # Update the recipe with ID 11
+
+3. Delete a recipe by its ID:
+   recipe_id_to_delete = 11  # Change this to the ID of the recipe you want to delete
+   delete_recipe(recipe_id_to_delete)
+
+4. Get all recipes:
+   get_all_recipes()
+
+5. Rate a recipe and get its ratings:
+   rate_recipe(1, 4)  # Rate the recipe with ID 1 with a value of 4
+
+6. Get ratings of a recipe:
+   get_ratings_for_recipe(2)  # Get ratings for the recipe with ID 2
+
+7. Add a comment to a recipe:
+   comment_on_recipe(3, "This recipe is amazing!")  # Add a comment to the recipe with ID 3
+
+8. Retrieve comments for a recipe:
+   get_comments_for_recipe(2)  # Retrieve comments for the recipe with ID 2
+
+9. Search recipes by name:
+   search_recipes_by_name("pizza")  # Retrieve recipes with "pizza" in their name
+
+10. Search recipes by ingredient:
+    search_recipes_by_ingredient("pepper")  # Retrieve recipes with "pepper" in their ingredients
+    
+SEE THE BOTTOM PART OF THE CODE ,JUST REMOVE THE TRIPLE QUOTATION/COMMENT TO USE THE FUNCTIONS
+SEE THE BOTTOM PART OF THE CODE ,JUST REMOVE THE TRIPLE QUOTATION/COMMENT TO USE THE FUNCTIONS
+SEE THE BOTTOM PART OF THE CODE ,JUST REMOVE THE TRIPLE QUOTATION/COMMENT TO USE THE FUNCTIONS
+"""
 import requests
 
 # Define the base URL of your Flask application
