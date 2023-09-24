@@ -7,7 +7,12 @@ A RESTful API using Python that allows users to share, rate, and comment on reci
 
 **createtable.py** - create necessary tables where the data will be stored
 
-**testing.py** - series of function to
+**testing.py** - set of functions to interact with a Flask-based Recipe Management API.
+You can use these functions to perform various actions such as adding, updating, and deleting recipes,
+rating recipes, adding comments, and searching for recipes by name or ingredient.
+
+**unittests.py**
+
 
 ## Instructions
 
