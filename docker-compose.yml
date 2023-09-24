@@ -1,0 +1,26 @@
+version: '3'
+services:
+  # API service
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    depends_on:
+      - database
+    environment:
+      - DATABASE_URL=mssql+pyodbc:///?trusted_connection=yes&driver=ODBC+Driver+17+for+SQL+Server&server=database&database=practice1
+
+  # Database service
+  database:
+    image: mcr.microsoft.com/mssql/server
+    environment:
+      - ACCEPT_EULA=Y
+    ports:
+      - "1433:1433"
+    volumes:
+      - dbdata:/var/opt/mssql
+
+volumes:
+  dbdata:
